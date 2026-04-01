@@ -1,0 +1,31 @@
+{
+    "version": "1.0.0",
+    "description": "IP geolocation lookup from your terminal",
+    "homepage": "https://github.com/vineethkrishnan/ipwho",
+    "license": "MIT",
+    "url": "https://github.com/vineethkrishnan/ipwho/archive/refs/tags/v1.0.0.tar.gz",
+    "hash": "PLACEHOLDER",
+    "depends": "nodejs",
+    "extract_dir": "ipwho-1.0.0",
+    "installer": {
+        "script": [
+            "New-Item -ItemType Directory -Force -Path \"$dir\\libexec\" | Out-Null",
+            "Copy-Item -Recurse \"$dir\\bin\" \"$dir\\libexec\\bin\"",
+            "Copy-Item -Recurse \"$dir\\src\" \"$dir\\libexec\\src\"",
+            "Copy-Item \"$dir\\package.json\" \"$dir\\libexec\\package.json\""
+        ]
+    },
+    "bin": [
+        [
+            "libexec\\bin\\ipwho.js",
+            "ipwho"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/vineethkrishnan/ipwho"
+    },
+    "autoupdate": {
+        "url": "https://github.com/vineethkrishnan/ipwho/archive/refs/tags/v$version.tar.gz",
+        "extract_dir": "ipwho-$version"
+    }
+}
