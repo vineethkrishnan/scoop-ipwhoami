@@ -1,23 +1,23 @@
-# scoop-ipwho
+# scoop-ipwhoami
 
-Scoop bucket for [ipwho](https://github.com/vineethkrishnan/ipwho) — IP geolocation lookup from your terminal.
+Scoop bucket for [ipwhoami](https://github.com/vineethkrishnan/ipwhoami) — IP geolocation lookup from your terminal.
 
 ## Install
 
 ```powershell
-scoop bucket add ipwho https://github.com/vineethkrishnan/scoop-ipwho
-scoop install ipwho
+scoop bucket add ipwhoami https://github.com/vineethkrishnan/scoop-ipwhoami
+scoop install ipwhoami
 ```
 
 ## Update
 
 ```powershell
-scoop update ipwho
+scoop update ipwhoami
 ```
 
 ## Uninstall
 
 ```powershell
-scoop uninstall ipwho
-scoop bucket rm ipwho
+scoop uninstall ipwhoami
+scoop bucket rm ipwhoami
 ```

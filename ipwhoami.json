@@ -1,12 +1,12 @@
 {
     "version": "1.0.0",
     "description": "IP geolocation lookup from your terminal",
-    "homepage": "https://github.com/vineethkrishnan/ipwho",
+    "homepage": "https://github.com/vineethkrishnan/ipwhoami",
     "license": "MIT",
-    "url": "https://github.com/vineethkrishnan/ipwho/archive/refs/tags/v1.0.0.tar.gz",
+    "url": "https://github.com/vineethkrishnan/ipwhoami/archive/refs/tags/v1.0.0.tar.gz",
     "hash": "PLACEHOLDER",
     "depends": "nodejs",
-    "extract_dir": "ipwho-1.0.0",
+    "extract_dir": "ipwhoami-1.0.0",
     "installer": {
         "script": [
             "New-Item -ItemType Directory -Force -Path \"$dir\\libexec\" | Out-Null",
@@ -17,15 +17,15 @@
     },
     "bin": [
         [
-            "libexec\\bin\\ipwho.js",
-            "ipwho"
+            "libexec\\bin\\ipwhoami.js",
+            "ipwhoami"
         ]
     ],
     "checkver": {
-        "github": "https://github.com/vineethkrishnan/ipwho"
+        "github": "https://github.com/vineethkrishnan/ipwhoami"
     },
     "autoupdate": {
-        "url": "https://github.com/vineethkrishnan/ipwho/archive/refs/tags/v$version.tar.gz",
-        "extract_dir": "ipwho-$version"
+        "url": "https://github.com/vineethkrishnan/ipwhoami/archive/refs/tags/v$version.tar.gz",
+        "extract_dir": "ipwhoami-$version"
     }
 }
